@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF8F0;
+}
+
+.header {
+    background-color: #FFF9FA;
+    color: #DF9086;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Adjusted to ensure it's not hidden */
+    z-index: 1; /* Ensure it's on top of other elements */
+    margin-left: 250px; /* Offset to avoid overlap with sidebar */
+    font-size: 70%;
+}
+
+.header h1 {
+    margin: 0px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info span {
+    display: inline-block;
+    text-align: left;
+    font-size: 16px;
+}
+
+.user-info img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.sidebar {
+    background-color: #A34351;
+    color: #fff;
+    width: 250px;
+    height: 100vh;
+    margin-top: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgb(164 26 46 / 50%) 47px -50px 70px 14px inset;
+    justify-content: space-around;
+}
+
+.sidebar h2 {
+    text-align: left;
+    margin: 20px 0;
+    padding: 10px 12px 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Garet;
+    font-weight: 600;
+    font-size: 21px;
+    color: #DF9086;
+}
+
+.sidebar h2 img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-right: 7px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 20px;
+    flex-grow: 1; /* Allow the ul to grow and fill the remaining space */
+    margin-top: 10px; /* Push the ul to the top */
+    
+}
+
+.sidebar li {
+    padding: 23px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-bottom: 1px solid #DF9086;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: #E1E1E1; /* Change the hyperlink color */
+}
+
+.sidebar li:last-child {
+    border-bottom: none;
+}
+
+.sidebar li:hover {
+    background-color: #DF9086;
+}
+
+.logout {
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.logout button {
+    background-color: rgba(164, 26, 46, 0)  ;
+    color: #F2F2F2;
+    border: solid 1px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 13px;
+    width: 85%;
+}
+
+.logout button:hover {
+    background-color: #A34351;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.content h2 {
+    color: #DF9086;
+}
+
+.content p {
+    color: #DF9086;
+}

@@ -1,0 +1,76 @@
+/* About text styling */
+.about-text {
+    text-align: center;
+    margin: 50px 0 -55px; /* Space above and below the text */
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* Adjusted main-container height */
+.main-container {
+    display: flex;
+    height: calc(100vh - 160px); /* Full viewport height minus header and about text */
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* about form styling */
+.main-container {
+    display: flex;
+    height: calc(96vh - 100px); /* Full viewport height minus header and footer */
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.left-body {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start (top) */
+    padding-top: 0px; /* Add some padding to push it down slightly if needed */
+}
+
+.left-body .logo-center img {
+    height: 450px;
+    width: 450px;
+}
+.vertical-line {
+    width: 2px;
+    height: 350px;
+    background-color: #000;
+}
+.right-body {
+    flex: 1;
+    padding: 65px;
+}
+.right-body .box {
+    padding: 30px;
+    border: 1px solid #000;
+    margin-bottom: 50px;
+    border-radius: 26px;
+    background-color: #FDD9D4;
+    font-size: 23px;
+    font-family: 'times new roman';
+    padding: 20px;
+    text-align: justify;
+    letter-spacing: 1px
+}
+.below-box-text {
+    margin-top: 5px;
+    font-size: 23px;
+    font-family: 'times new roman';
+    text-align: justify;
+}
+#footer {  
+    height: 100px;
+    position: fixed;
+    bottom: -50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+}

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrollbars */
+}
+/* Header styling */
+header {
+    background-color: #EDB6AF; /* Set background color */
+    color: #fff; /* Set text color */
+    padding: 10px 20px; /* Add padding */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+}
+header .logo {
+    width: 50px; /* Set width */
+    height: 50px; /* Set height */
+    border-radius: 50%; /* Make it circular */
+    background-color: #fff; /* Change this to your logo */
+}
+.logo img {
+    max-width: 100%; /* Ensure image doesn't exceed container */
+    height: auto; /* Maintain aspect ratio */
+}
+header nav ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+header nav ul li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add right margin between items */
+}
+header nav ul li a {
+    color: #333; /* Set link color */
+    text-decoration: none; /* Remove underline */
+    padding-left: 35px; /* Add left padding */
+}
+
+/* Adjustments to the existing CSS */
+.container {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.left {
+    flex: 1;
+    position: relative;
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
+    position: relative;
+    font-family: "arial";
+    font-size: 25px;
+}
+
+.right .vertical-line {
+    position: absolute;
+    left: 50px; /* Adjust the gap from the container's left edge */
+    top: 30%;
+    bottom: 30%;
+    width: 2px;
+    background-color: black;
+}
+
+.right-content {
+    padding-left: 100px; /* Ensure space between the line and the text */
+}
+
+.right h1 {
+    margin-top: 0;
+}
+
+.right p {
+    margin-bottom: 20px;
+}
+
+.right .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #E9A49B;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+    font-size: 20px;
+}
+
+.right .button:hover {
+    background-color: #4b2c2f;
+}

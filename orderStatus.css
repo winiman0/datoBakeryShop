@@ -1,0 +1,195 @@
+		body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFF8F0;
+        }
+
+        .header {
+            background-color: #FFF9FA;
+            color: #DF9086;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .user-info img {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+
+        .sidebar {
+            background-color: #A34351;
+            color: #fff;
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            text-align: center;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .sidebar h2 {
+            text-align: left;
+            margin: 20px 0;
+            padding: 10px 12px 12px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Garet;
+            font-size: 21px;
+        }
+
+        .sidebar h2 img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-left: 10px;
+            padding-right: 7px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 20px;
+        }
+
+        .sidebar li {
+            padding: 23px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border-bottom: 1px solid #DF9086;
+        }
+
+        .sidebar li:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar li:hover {
+            background-color: #DF9086;
+        }
+
+        .logout {
+            margin: 20px 0;
+            padding: 20px;
+        }
+
+        .logout button {
+            background-color: #DF9086;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            width: 80%;
+        }
+
+        .logout button:hover {
+            background-color: #A34351;
+        }
+
+        .content {
+            margin-left: 340px; /* Added margin to push content to the right */
+			margin-top: 300;
+            padding: 20px;
+        }
+
+        .content h1 {
+            color: #DF9086;
+            font-size: 2em;
+            margin-bottom: 10px;
+            margin-left: -70px; /* Move h1 to the left */
+        }
+
+        .order-date {
+            margin: 0;
+            font-size: 1.2em;
+            color: #666;
+            margin-left: -60px; /* Move order-date to the left */
+        }
+
+        .order-section {
+            margin-bottom: 20px;
+            max-width: 800px;
+        }
+
+        .order-section h2 {
+            color: black;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #DF9086;
+            padding-bottom: 5px;
+        }
+
+        .order {
+            background-color: #FDD9D4;
+            padding: 20px;
+            margin-bottom: 80px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            height: 150px;
+        }
+
+        .order-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .order-item img {
+            width: 120px;
+            height: auto;
+            margin-right: 15px;
+            border-radius: 10px;
+        }
+
+        .order-item-text {
+			color: black;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .order-item-text p {
+            margin: 3px 0;
+            font-size: 0.9em;
+        }
+
+        .order-item-text .product-name {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .product-quantity {
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .total-price {
+            margin-top: 10px;
+            text-align: right;
+            font-weight: bold;
+            font-size: 1.5em;
+            color: pink;
+        }

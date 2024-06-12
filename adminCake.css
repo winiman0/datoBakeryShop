@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.headP {
+    padding-left: 10px;
+    color: #3b3836;
+    font-family: Garet;
+}
+
+a {
+    text-decoration: none;
+    color: #3b3836;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.box,
+.unavailable {
+    width: 200px;
+    height: 250px;
+    padding: 5px;
+    margin: 17px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: #F7DBD2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+.unavailable {
+    background-color: #706e6d;
+}
+
+.unavailable .cakeContentUn {
+    color: antiquewhite;}
+
+.unavailable img{
+    display: none;
+}
+
+.box:hover {
+    background-color: rgba(157, 175, 137, 0.72);
+    box-shadow: rgba(232, 154, 154, 0.4) -5px 5px, rgba(232, 154, 154, 0.2) -10px 10px;
+}
+
+.box:hover img {
+    opacity: 0;
+}
+
+.box:hover .hover-text {
+    color: #ffffff;
+    font-size: large;
+}
+
+
+.cakeContent {
+    font-size: 85%;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    color: #A34351;
+}
+
+
+.cakeImage {
+    width: 85%;
+    height: auto;
+    border-radius: 25px;
+    margin: auto; /* Center the image horizontally */
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main {
+    margin-left: 250px; /* Adjust as needed for sidebar */
+    padding: 20px;
+}
+
+.montserrat-monty {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}

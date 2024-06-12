@@ -1,0 +1,34 @@
+/* Style for the search input */
+#search {
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style for the search results container */
+#searchResults {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+/* Style for the search results table */
+#searchResults table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#searchResults th,
+#searchResults td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+#searchResults th {
+    background-color: #f2f2f2;
+}

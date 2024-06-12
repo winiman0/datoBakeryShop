@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF8F0;
+}
+
+.content {
+    margin-left: 270px;
+    padding: 20px;
+    margin-top: 0px;
+}
+
+.content h2 {
+    color: #DF9086;
+}
+
+.content p {
+    color: black;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px; /* Add some margin */
+}
+
+.box {
+    width: 380px;
+    height: 550px;
+    background-color: #F7DBD2;
+    margin: 0 30px; /* Add some margin between the boxes */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Adjusted alignment */
+    color: black;
+    font-weight: bold;
+}
+
+.comment {
+    margin-top: 12px; /* Adjusted margin */
+    font-size: 15px; /* Adjusted font size */
+    width: 150px; /* Adjust the width of the image */
+    height: auto; /* Allow the height to adjust accordingly */
+    display: block;
+    margin: 30px auto; /* Center the image */
+}
+
+.back-button {
+    background-color: #DF9086;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #A34351;
+}
+
+.form-group.visible {
+    display: block;
+  }
+
+.buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    gap: 10px; /* Add space between the buttons */
+    margin-top: 20px; /* Add margin to push the buttons down */
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    background: red;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.form-group select,
+.form-group textarea {
+    width: 100%; /* Ensures both elements take up the full width */
+	height: auto;
+    padding: 10px; /* Consistent padding for both elements */
+    margin-top: 5px; /* Consistent margin for both elements */
+	margin-bottom: 15px; /* Consistent margin for both elements */
+    border: 3px solid #ccc; /* Consistent border style */
+    border-radius: 10px; /* Consistent border radius */
+    box-sizing: border-box; /* Ensure padding and border are included in the width and height */
+    font-size: 16px; /* Ensure the font size is consistent */
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    height: 100px; /* Set a consistent height for the textarea */
+}
+
+button[type="submit"] {
+    background-color: #16bf79;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: grey;
+}

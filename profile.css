@@ -1,0 +1,162 @@
+/* Ensure the main container allows side-by-side alignment */
+.container-fluid {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    margin-top: 20px;
+    justify-content: center;
+}
+
+/* Style each box container */
+.box-container {
+    flex: 1; /* Allow the containers to flex and take equal space */
+    min-width: 300px; /* Ensure a minimum width for the boxes */
+    margin-bottom: 20px; /* Add some space at the bottom */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 300px; /* Make the box take full width of its container */
+    height: auto;
+    background-color: rgb(252, 189, 199);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(191, 126, 126, 0.079);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: black;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.box-title{
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 900;
+}
+
+/* Style for the contact details box on the right */
+.box-contact {
+    background-color:  rgb(252, 189, 199); /* Different background color for differentiation */
+    border: 1px solid rgb(252, 189, 199); /* Border to separate sections */
+    line-height: 17px;
+    color: #452525;
+    padding-left: 30px;
+}
+
+/* Add some spacing and styling to labels and inputs */
+.label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+            font-weight: 700;
+}
+
+.input-container {
+    margin-bottom: 15px; /* Space between input fields */
+}
+
+input[type="text"], select {
+    width: 100%; /* Make input fields take full width */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Style the update button */
+.button-19 {
+    appearance: button;
+    background-color: #00d28c;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 7px;
+    outline: none;
+    overflow: visible;
+    padding: 7px 10px 7px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 60%;
+    text-overflow: ellipsis;
+    }
+
+    .button-19:after {
+    background-clip: padding-box;
+    background-color: #0cc371;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    }
+
+    .button-19:main,
+    .button-19:focus {
+    user-select: auto;
+    }
+
+    .button-19:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+    }
+
+    .button-19:disabled {
+    cursor: auto;
+    }
+
+    .button-19:active {
+    border-width: 4px 0 0;
+    background: none;
+    }
+
+/* General page styles */
+main {
+    margin-left: 250px;
+    padding: 20px;
+    padding-left: 70px;
+    padding-right: 100px;
+}
+
+h1 {
+    margin-bottom: 55px;
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+h2 {
+    color: #DF9086;
+}
+
+p {
+    color: black;
+}
+
+.comment {
+    margin-top: 2px;
+    font-size: 50px;
+}

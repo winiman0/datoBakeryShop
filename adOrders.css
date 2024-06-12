@@ -1,0 +1,320 @@
+/* General styling for the main content */
+main {
+  margin-left: 250px;
+  padding: 20px;
+  padding-left: 40px;
+}
+
+/* Styling for the heading */
+.head1 {
+  font-size: 100%;
+  color: rgba(21, 8, 8, 0.836);
+  margin-bottom: 30px;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #F7DBD2;
+  border-radius: 25px;
+  padding: 20px;
+  table-layout: auto;
+  margin: 0px !important;
+}
+
+#orderTable {
+  margin: 0px;
+}
+
+/* Styling for table cells and headers */
+td, th {
+  padding: 8px 12px;
+  text-align: center;
+  border-bottom: 1px solid #DF9086;
+  white-space: nowrap;
+  max-width: 150px; /* Adjust as needed */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Row styling */
+tr {
+  height: max-content;
+  font-size: medium;
+  font-weight: 400;
+}
+
+/* Header styling */
+th {
+  font-size: medium;
+}
+
+/* Container styling for overflow */
+.container {
+  margin: 5px;
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background-color: #F7DBD2;
+  border-radius: 25px;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+/* Specific styling for table container #F7DBD2 */
+.table-container {
+  overflow-x: auto;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.search-container , .search-container form{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 23px;
+}
+
+/* Word-wrap for table data */
+td {
+  word-wrap: break-word;
+}
+
+#search {
+  appearance: auto;
+  background-color: #fff;
+  border: 1px solid #e4b1b1b1;
+  border-radius: 5px;
+  padding: 8px;
+  padding-left: 20px;
+  font-size: small;
+  width: 300px; /* Adjust the width as needed */
+  font-family: "Poppins", sans-serif;
+}
+
+select#status {
+  appearance: auto;
+  background-color: #fff;
+  border: 1px solid #e4b1b1b1;
+  border-radius: 5px;
+  padding: 8px;
+  padding-left: 20px;
+  font-size: small;
+  width: 150px; /* Adjust width as needed */
+  font-family: "Poppins", sans-serif;
+}
+
+
+select#status option {
+  padding: 8px;
+  font-size: small;
+}
+
+.button-82-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-82-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-82-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(to left, hsl(184deg 98% 20%) 0%, hsl(184, 44%, 40%) 8%, hsl(184, 44%, 35%) 92%, hsl(184deg 98% 20%) 100%);
+}
+
+.button-82-front {
+  display: block;
+  position: relative;
+  padding: 8px 16px;
+  border-radius: 12px;
+  color: white;
+  background: #80c1c7;
+  will-change: transform;
+  transform: translateY(-4px);
+  letter-spacing: 1px;
+  transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+@media (min-width: 768px) {
+  .button-82-front {
+    padding: 10px 20px;
+    letter-spacing: 1px;
+  }
+}
+
+.button-82-pushable:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.button-82-pushable:hover .button-82-front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:hover .button-82-shadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.button-19 {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.button-19:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-19:main,
+.button-19:focus {
+  user-select: auto;
+}
+
+.button-19:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.button-19:disabled {
+  cursor: auto;
+}
+
+.button-19:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+
+
+.button-45 {
+  margin-left: 12px;
+  align-items: center;
+  background-color: #FFE7E7;
+  background-position: 0 0;
+  border: 1px solid #FEE0E0;
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #D33A2C;
+  cursor: pointer;
+  display: flex;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 33.4929px;
+  list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none;
+  padding: 0px 12px;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: none;
+  text-underline-offset: 1px;
+  transition: border .2s ease-in-out,box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  word-break: break-word;
+}
+
+.button-45:active,
+.button-45:hover,
+.button-45:focus {
+  outline: 0;
+}
+
+
+.button-45:active {
+  background-color: #D33A2C;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #FFFFFF;
+}
+
+.button-45:hover {
+  background-color: #FFE3E3;
+  border-color: #FAA4A4;
+}
+
+.button-45:active:hover,
+.button-45:focus:hover,
+.button-45:focus {
+  background-color: #D33A2C;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #FFFFFF;
+}

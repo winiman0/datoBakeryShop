@@ -1,0 +1,179 @@
+main{
+    margin-left: 250px;
+    padding: 35px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container1 {
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.box a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.box {
+    width: 335px;
+    height: 145px;
+    padding: 10px;
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: #FDD9D4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    /*box-shadow: rgba(174, 36, 36, 0.642) 0px 4px 12px;
+    box-shadow: rgba(174, 36, 36, 0.642) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    box-shadow: rgba(206, 104, 64, 0.337) 0px 2px 5px 0px, rgba(74, 58, 58, 0.05) 0px 1px 1px 0px;*/
+    
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(214, 129, 129, 0.489) 0px 8px 20px;
+}
+
+.headee {
+    margin-top: 23px;
+    padding-top: 23px;
+    padding-left: 50px;
+    margin-left: 0 auto;
+    font-weight: 700;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+.desc {
+    margin: 5px 0; /* Space around the description */
+    text-align: center;
+    align-items: center;
+    font-size: 18px; 
+    color: #A34351;
+    font-weight: 700;
+    padding-top: 5px;
+}
+
+.icon {
+    width: 50%;
+    float:left;
+    margin-right: 0 auto;
+    transition: transform 0.3s;
+}
+
+.box:hover .icon, .box:hover .text-content {
+    transform: scale(1.1);
+}
+
+.box .text-content {
+    display: flex; /* Use flexbox for text content */
+    flex-direction: column; /* Arrange text content vertically */
+    align-items: center;
+}
+
+.tl{
+    color: black;
+    margin: 0; /* Space around the title */
+    text-align: left;
+}
+
+.desc{
+    padding-top: 0 auto;
+    flex-grow: 1; /* Allow the content to grow and fill the available space */
+    margin: 0; /* Space around the description */
+    text-align: left;
+    font-size: 18px; 
+}
+
+
+/* Table styling */
+#transTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FDD9D4;
+    border-radius: 25px;
+    table-layout: auto;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+/* Styling for table cells and headers */
+td, th {
+    padding: 8px 12px;
+    text-align: center;
+    border-bottom: 1px solid #DF9086;
+    white-space: nowrap;
+    max-width: 150px; /* Adjust as needed */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Row styling */
+tr {
+    height: max-content;
+    font-size: medium;
+    font-weight: 400;
+}
+
+/* Header styling */
+th {
+    font-size: medium;
+}
+
+/* Specific styling for table container */
+.table-container {
+    overflow-x: auto;
+    overflow-y: auto;
+    width: 80%;
+    height: auto;
+    background-color: #FDD9D4;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.link{
+    justify-content: flex-end;
+    padding-top: 20px;
+    text-decoration: none;
+    color: rgb(47, 15, 98);
+}
+
+/* Word-wrap for table data */
+td {
+    word-wrap: break-word;
+}
+
+

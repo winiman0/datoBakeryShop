@@ -1,0 +1,102 @@
+body {
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.headP {
+    padding-left: 10px;
+    color: #3b3836;
+    font-family: Garet;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.box {
+    width: 200px;
+    height: 250px; 
+    padding: 5px;
+    margin: 17px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: #F7DBD2;
+    display: flex; /* Add flexbox */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    align-content: center;
+    position: relative;
+    /*box-shadow: rgba(174, 36, 36, 0.642) 0px 4px 12px;
+    box-shadow: rgba(174, 36, 36, 0.642) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    box-shadow: rgba(206, 104, 64, 0.337) 0px 2px 5px 0px, rgba(74, 58, 58, 0.05) 0px 1px 1px 0px;*/
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+.box:hover {
+    background-color: rgb(157, 175, 137, 72%) ;
+    /*box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;*/
+    box-shadow: rgb(232, 154, 154, 40%) -5px 5px, rgba(232, 154, 154, 0.2) -10px 10px;
+}
+
+/* Additional styles for child elements */
+.box:hover img {
+    /* Apply styles to img elements inside .box when .box is hovered */
+    /* For example: */
+    opacity: 0;
+}
+
+.box:hover .hover-text {
+    /* Apply styles to .hover-text elements inside .box when .box is hovered */
+    /* For example: */
+    color: rgb(255, 255, 255);
+    font-size: large;
+}
+
+.cakeContent {
+    font-size: 85%;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: montserrat;
+    color: #A34351;
+
+}
+
+.cakeImage {
+    width: 85%;
+    height: auto;
+    border-radius: 25px;
+    margin: auto; /* Center the image horizontally */
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+main {
+    margin-left: 250px; /* Add margin to the left of main content to create space for the sidebar */
+    padding: 20px; /* Add padding to main content */
+}
+
+
+.montserrat-monty {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
