@@ -1,14 +1,10 @@
 <?php
-	/* php & mysqldb connection file */
-	$user = "root"; 			//mysqlusername
-	$pass = ""; 				//mysqlpassword
-	$host = "localhost"; 		//server name or ipaddress
-	$dbname= "datosbakery4"; 	//your db name
+    $host = 'localhost';
+    $user = 'root';
+    $password = '';
+    $database = 'datosbakery4';
 
-	#echo "<b>User 			: </b>" .$user ."<br>";
-	#echo "<b>Password		: </b>" .$pass ."<br>";
-	#echo "<b>Host 			: </b>" .$host ."<br>";
-	#echo "<b>Database name 	: </b>" .$dbname ."<br>";
-
-	$dbconn= mysqli_connect($host, $user, $pass,$dbname)or die(mysqli_error($dbconn));
+    $dbconn = mysqli_connect($host, $user, $password, $database)
+    or die ("Failed to Connected");
+    #echo ("Connected");
 ?>

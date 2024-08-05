@@ -10,20 +10,6 @@
         die('Invalid transaction number.');
     }
 
-    // Check if transactionNo exists in order_log
-    $sqlCheck = "SELECT COUNT(*) AS cnt FROM order_log WHERE transactionNo = ?";
-    $stmtCheck = mysqli_prepare($dbconn, $sqlCheck);
-    mysqli_stmt_bind_param($stmtCheck, "s", $transactionNo);
-    mysqli_stmt_execute($stmtCheck);
-    $resultCheck = mysqli_stmt_get_result($stmtCheck);
-    $rowCheck = mysqli_fetch_assoc($resultCheck);
-
-    if ($rowCheck['cnt'] == 0) {
-        die('Error: No order details found for this transaction.');
-    }
-
-mysqli_stmt_close($stmtCheck);
-
     // Query the database for details related to the transaction
         $sql = "SELECT c.*, ci.*, ol.*, 
         oc.quantity AS cake_quantity, 
@@ -54,7 +40,6 @@ mysqli_stmt_close($stmtCheck);
 
         }
             mysqli_stmt_close($stmt);
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

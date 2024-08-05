@@ -1,6 +1,6 @@
 <?php
-$title = "Shopping Cart";
-include('custNav.php');
+$title = "Cart";
+include("custNav.php");
 include('font.php');
 
 // Initialize grand total
@@ -21,10 +21,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="cart.css">
-    <title>Shopping Cart</title>
+    <title>Cart</title>
     <style>
         .content {
-            margin-left: 1500px;
+            margin-left: 500px;
             margin-top: 15px;
             padding: 20px;
         }
@@ -34,6 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             background: #fff;
             padding: 20px;
             border-radius: 8px;
+            margin-top: 30px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1, h2 {
@@ -88,7 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
     <div class="cart-container">
-        <h1>Shopping Cart</h1>
+        <h1>CHECKLIST</h1>
         <?php if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])): ?>
             <h2>Cakes</h2>
             <table>
@@ -156,7 +157,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <table>
                 <tr class="total-row">
                     <td colspan="5">Grand Total</td>
-                    <td><?php echo htmlspecialchars($grandTotal); ?></td>
+                    <td>RM <?php echo htmlspecialchars($grandTotal); ?></td>
                 </tr>
             </table>
             <form method="post" action="">

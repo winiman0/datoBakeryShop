@@ -1,5 +1,9 @@
 <?php
-    include('.php');
+    session_start();
+    if (!isset($title)) {
+        $title = "Home";
+    }
+    include('header.php');
 ?>
 
 <!DOCTYPE html>

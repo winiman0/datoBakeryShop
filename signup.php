@@ -1,4 +1,8 @@
 <?php
+    session_start();
+    if (!isset($title)) {
+        $title = "Sign Up";
+    }
     include('header.php');
 ?>
 

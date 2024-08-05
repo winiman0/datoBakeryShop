@@ -32,12 +32,14 @@
         <ul>
             <li><a href="product.php">Menu</a></li>
             <li><a href="displayCart.php">Cart</a></li>
+        <?php if ($custUsername !== 'Guest'): ?>
             <li><a href="orderStatus.php">Orders</a></li>
             <li><a href="profile.php">Account</a></li>
         </ul>
-        <div class="logout">
-            <button onclick="logout()">Logout</button>
-        </div>
+            <div class="logout">
+                <button onclick="logout()">Logout</button>
+            </div>
+        <?php endif; ?>
     </div>
 
 

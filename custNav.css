@@ -54,7 +54,6 @@ body {
     display: flex;
     flex-direction: column;
     box-shadow: rgb(164 26 46 / 50%) 47px -50px 70px 14px inset;
-    
 }
 
 .sidebar h2 {
@@ -139,4 +138,8 @@ body {
 
 .content p {
     color: #DF9086;
+}
+
+.hide-logoutbtn .logout {
+    display: none;
 }

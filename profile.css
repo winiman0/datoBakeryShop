@@ -12,6 +12,7 @@
     min-width: 300px; /* Ensure a minimum width for the boxes */
     margin-bottom: 20px; /* Add some space at the bottom */
     display:flex;
+    padding-right: -15px;
     flex-direction: column;
     justify-content: center;
     align-items: center;

@@ -2,7 +2,7 @@
 include('dbconn.php');
 
 function generateCustomID() {
-    return 'C' . mt_rand(100000, 999999); // Generate 9 random digits and prefix with 'C'
+    return 'C' . mt_rand(0001, 9999); // Generate 4 random digits and prefix with 'C'
 }
 
 function isCustIDUnique($custID, $dbconn) {
@@ -43,6 +43,6 @@ if(isset($_POST["username"])) {
     $stmt->close();
     $dbconn->close();
     
-    echo "<script>window.location= 'login.html'</script>";
+    echo "<script>window.location= 'login.php'</script>";
 }
 ?>

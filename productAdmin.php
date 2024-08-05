@@ -24,12 +24,12 @@
         <div class="box-container">
             <div class="box">
             <a href="adminCake.php">
-                <img src="image/boxCake.jpg" alt="boxCake">
+                <img src="cakeImage.jpg" alt="boxCake">
                 <p><b>CAKES</b></p>
             </div>
             <div class="box">
                 <a href="adminPastry.php">
-                <img src="image/bocPastry.jpg" alt="boxPastry">
+                <img src="pastryImage.jpg" alt="boxPastry">
                 <p><b>PASTRIES</b></p>
             </div>
         </div>

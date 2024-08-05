@@ -51,8 +51,6 @@ if(isset($_POST['update'])){
 	
 	}
 }
-echo "<script>
-	alert('Data have been updated.'); 
-	window.location = 'users.php';
-	</script>";
+echo "<script>alert('Data have been updated.'); window.location = 'users.php';</script>";
+echo '<button class="back-button" type="button" onclick="window.history.back();">Back</button>';
 ?>

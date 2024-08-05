@@ -10,8 +10,7 @@ include("font.php");
 $sql = "SELECT c.custID, p.transactionNo, o.orderStatus, p.amount, p.paymentDate, p.paymentMethod
         FROM order_log o 
         JOIN customer c ON c.custID = o.custID
-        JOIN sales_log p ON p.transactionNo = o.transactionNo
-        ORDER BY p.paymentDate DESC";
+        JOIN sales_log p ON p.transactionNo = o.transactionNo";
 $query = mysqli_query($dbconn, $sql) or die("Error: " . mysqli_error($dbconn));
 ?>
 

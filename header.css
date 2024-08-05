@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrollbars */
+}
+/* Header styling */
+header {
+    background-color: #EDB6AF; /* Set background color */
+    color: #fff; /* Set text color */
+    padding: 10px 20px; /* Add padding */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+}
+header .logo {
+    width: 50px; /* Set width */
+    height: 50px; /* Set height */
+    border-radius: 50%; /* Make it circular */
+    background-color: #fff; /* Change this to your logo */
+}
+.logo img {
+    max-width: 100%; /* Ensure image doesn't exceed container */
+    height: auto; /* Maintain aspect ratio */
+}
+header nav ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+header nav ul li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add right margin between items */
+}
+header nav ul li a {
+    color: #333; /* Set link color */
+    text-decoration: none; /* Remove underline */
+    padding-left: 35px; /* Add left padding */
+}

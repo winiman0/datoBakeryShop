@@ -1,4 +1,9 @@
 <?php
+    session_start();
+    if (!isset($title)) {
+        $title = "Sign In";
+    }
+    include('header.php');
 ?>
 
 <!DOCTYPE html>
@@ -13,21 +18,6 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <!-- Header section -->
-    <header>
-        <!-- Logo section -->
-        <div class="logo"><img src="image/logo.png" alt="Main Logo"></div>
-        <!-- Navigation menu -->
-        <nav>
-            <ul>
-                <li><a href="home.html"><b>Home</b></a></li>
-                <li><a href="login.html"><b>Sign In</b></a></li>
-                <li><a href="signup.html"><b>Sign Up</b></a></li>
-                <li><a href="about.html"><b>About Us</b></a></li>
-            </ul>
-        </nav>
-    </header>
-
     <!-- Main content section (Login form) -->
     <div class="login-container">
         <!-- Login form heading -->
@@ -51,7 +41,7 @@
             <!-- Submit button -->
             <input type="submit" name="Submit" value="Sign In">
         </form>
-        <p style="font-size: 14px;">Don't have an account? <a href="signup.html"><b>Register</b></a></p>
+        <p style="font-size: 14px;">Don't have an account? <a href="signup.php"><b>Register</b></a></p>
     </div>
 
 <div id="footer">&copy 2024 | Dato’s Bakery Ordering System</div> 

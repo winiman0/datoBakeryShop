@@ -78,3 +78,11 @@ body {
     border-radius: 10px;
     resize: vertical;
 }
+
+.form-group select,
+.form-group input[type="number"] {
+    width: 250px; /* Same width for consistency */
+    padding: 10px;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+}

@@ -9,7 +9,7 @@ $amount = $_SESSION['amount'] ?? 0.00;
 // Function to generate a unique order ID
 function generateOrderID($dbconn) {
     do {
-        $orderID = 'OR' . mt_rand(1000, 9999);
+        $orderID = 'OR' . mt_rand(0001, 9999);
         $sql = "SELECT orderID FROM order_log WHERE orderID = ?";
         $stmt = mysqli_prepare($dbconn, $sql);
         mysqli_stmt_bind_param($stmt, "s", $orderID);
@@ -63,7 +63,7 @@ $serviceData = $_SESSION['serviceData'] ?? [];
 
 // Generate a unique transaction number
 function generateTransactionNo() {
-    return 'T' . mt_rand(100000, 999999);
+    return 'TR' . mt_rand(00001, 99999);
 }
 
 $transactionNo = generateTransactionNo();
@@ -72,7 +72,7 @@ $orderStatus = "pending";
 $paymentType = isset($_POST['paymentType']) ? $_POST['paymentType'] : '';
 
 // Insert into service
-$serviceID = 'S' . mt_rand(1000, 9999);
+$serviceID = 'SR' . mt_rand(0001, 9999);
 
 // Check if the session data exists
 if (isset($_SESSION['serviceData'])) {
@@ -109,19 +109,17 @@ mysqli_stmt_bind_param($stmtP, "sssd", $transactionNo, $paymentType, $orderDate,
 mysqli_stmt_execute($stmtP);
 
 // Process each cart item and store in database
-$cart = $_SESSION['cart'] ?? [];
 foreach ($cart as $item) {
     $orderID = generateOrderID($dbconn); // Ensure unique orderID
     $dessertID = $item['dessertID'];
     $dessertType = $item['dessertType'];
-    
+    $quantity = $item['quantity'];
     $totalPrice = $item['totalPrice'];
 
     if ($dessertType == 'cake') {
         $shape = $item['shape'];
         $decoration = $item['decoration'];
         $specialRequest = $item['specialRequest'];
-        $quantity = $item['quantity'];
 
         // Insert into orders_cake
         $sqlC = "INSERT INTO order_cake (orderID, dessertID, shapeReq, decorationReq, request, quantity) VALUES (?, ?, ?, ?, ?, ?)";
@@ -135,7 +133,6 @@ foreach ($cart as $item) {
     } elseif ($dessertType == 'pastry') {
         $qtyPerBox = $item['qtyPerBox'];
         $addTopping = $item['addTopping'];
-        $quantity = $item['quantity'];
 
         // Insert into orders_pastry
         $sqlP = "INSERT INTO order_pastry (orderID, dessertID, qtyPerBoxReq, addToppingReq, quantity) VALUES (?, ?, ?, ?, ?)";

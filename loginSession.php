@@ -1,13 +1,13 @@
 <?php
 session_start();
 ## include db connection file 
-$dbconn= mysqli_connect("localhost", "root", "","datosbakery4")or die(mysqli_error($dbconn));
+include('dbconn.php');
 if(isset($_POST['Submit'])){
 	## capture values from HTML form 
 	$username = $_POST['username'];
 	$password = $_POST['password'];
         ## verify if the values of username and password are correct
-        if($username == "admin" && $password == "admin"){
+        if($username == "NurinIman" && $password == "admin1234."){
             ## set the session’s username as administrator
             $_SESSION['username'] = "Administrator";
             ## directly call / open the page for menuAdmin 
@@ -24,7 +24,8 @@ if(isset($_POST['Submit'])){
 
                 ##to verify the user’s information exist in the db
                 if($numRow == 0){  ##if the user’s record is not exist
-                    echo "Invalid Username/Password. Click here to <a href='login.php'>login</a>.";
+                    echo "<script>alert('Invalid Username or Password. Please try again.')
+                    window.location = 'login.php';</script>";
                     exit;
                 }else{
                     ##retrieve the user’s infor detail 
@@ -32,12 +33,10 @@ if(isset($_POST['Submit'])){
                     
                     ##ser the session name with the current user’s info
                     $_SESSION['username'] = $record['custUsername'];
-                    $_SESSION['password'] = $record['custPassword'];
                     ##directly open the page menu 
                     header("Location: product.php");
                     
                 }
         }
 }
-mysqli_close($dbconn);
 ?>

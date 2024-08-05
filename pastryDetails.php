@@ -67,14 +67,13 @@
                     <div class="form-group">
                         <label for="flavour">Topping:</label>
                         <select id="flavour" name="flavour">
-                            <option value="select">-Select-</option>
                             <option value="chocolateRice">Chocolate Rice</option>
                             <option value="creamCheese">Cream Cheese</option>
                             <option value="whippingCream">Whipping Cream</option>
-                            <option value="rainbowRiceChoco">Rainbow rice Chocolate</option>
+                            <option value="rainbowRiceChoco">Rainbow Rice Chocolate</option>
                             <option value="almond">Almond</option>
                             <option value="gratedCheese">Grated Cheese</option>
-                            <option value="mixFruit">Mix Fruit</option>
+                            <option value="mixFruit">Mix Fruits</option>
                             <option value="nutella">Nutella</option>
                             <option value="cornflakes">Cornflakes</option>
                             <option value="sugar">Sugar</option>
@@ -83,7 +82,7 @@
                     <div class="form-group">
                         <label for="quantityPerBox">Quantity Per Box:</label>
                         <select id="quantityPerBox" name="quantityPerBox">
-                            <option value="select">-Select-</option>
+                            <option value="2">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>

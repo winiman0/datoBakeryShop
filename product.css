@@ -42,9 +42,7 @@ body {
     background-color: #FFF8F0;
     border: 1px solid #000000;
     border-radius: 30px;
-    padding: 20px 0px; 
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px 0; /* Adjusted padding */
     text-align: center;
     margin: 0 15px; /* Space between boxes */
     transition: transform 0.3s, background-color 0.3s;
@@ -57,7 +55,7 @@ body {
 }
 
 .box img {
-    width: auto; /* Adjusted image width */
+    width: 400px; /* Adjusted image width */
     height: 400px; /* Adjusted image height */
     margin-bottom: -5px; /* Adjusted margin bottom */
     border-radius: 25px;

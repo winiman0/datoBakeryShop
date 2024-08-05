@@ -2,7 +2,7 @@
     include("adminNav.php");
     include("dbconn.php");
     include("font.php");
-
+    
     $sqlDes = "SELECT * FROM dessert WHERE dessertStatus = 'AVAILABLE'";
 	$queryDes = mysqli_query($dbconn, $sqlDes) or die("Error: " . mysqli_error($dbconn));
     $numDessert = mysqli_num_rows($queryDes);
@@ -21,7 +21,7 @@
             FROM order_log o 
             JOIN customer c ON c.custID = o.custID
             JOIN sales_log p ON p.transactionNo = o.transactionNo
-            LIMIT 5";
+            LIMIT 8";
     $query = mysqli_query($dbconn, $sql) or die("Error: " . mysqli_error($dbconn));
     
 ?>

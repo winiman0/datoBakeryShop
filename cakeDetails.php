@@ -68,7 +68,6 @@
                     <div class="form-group">
                         <label for="shape">Shape:</label>
                         <select id="shape" name="shape">
-                            <option value="select">-Select-</option>
                             <option value="rectangle">Rectangle</option>
                             <option value="round">Round</option>
                             <option value="square">Square</option>
@@ -77,7 +76,6 @@
                     <div class="form-group">
                         <label for="decoration">Decoration:</label>
                         <select id="decoration" name="decoration">
-                            <option value="select">-Select-</option>
                             <option value="wedding">Wedding</option>
                             <option value="birthday">Birthday</option>
                             <option value="party">Party</option>
@@ -87,7 +85,7 @@
                     </div>
                     <div class="form-group">
                         <label for="quantity">Quantity:</label>
-                        <textarea id="quantity" name="quantity"></textarea>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
                     </div>
                     <div class="form-group">
                         <label for="special-request">Special Request:</label>

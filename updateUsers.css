@@ -44,11 +44,6 @@ main {
       cubic-bezier(.3, .7, .4, 1);
   }
   
-  td {
-      font-family:  "Wix Madefor Display", sans-serif;
-      font-weight: 600;
-  }
-
   .button-82-edge {
     position: absolute;
     top: 0;
@@ -71,7 +66,7 @@ main {
     width: 100%; /* Make input fields take full width */
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #f0c9c9;
+    border: 1px solid #ddd;
     border-radius: 5px;
     box-sizing: border-box;
 }
